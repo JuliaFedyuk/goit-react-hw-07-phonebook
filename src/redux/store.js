@@ -8,9 +8,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import contactsReducer from './contacts/contacts-reducer';
-
-// import storage from 'redux-persist/lib/storage';
+import { contactsReducer } from './contacts';
 
 const myMiddleware = store => next => action => {
   console.log('my middleware', action);
